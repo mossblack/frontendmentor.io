@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Frontend Mentor | NFT preview card component</title>
+</head>
+<body>
+  <div class="flex justify-center items-center h-screen w-screen overflow-auto bg-[#0d192b]">
+    <div class="flex flex-col m-5 p-5 rounded-xl max-w-xs drop-shadow-2xl bg-[#14253d]">
+
+      <div class="group relative cursor-pointer">
+        <img src="../images/image-equilibrium.jpg" class="rounded-xl">
+        <img src="../images/icon-view.svg" class="absolute min-w- top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 z-10 transition-all duration-200 group-hover:opacity-100">
+        <div class="w-full h-full rounded-xl absolute top-0 group-hover:opacity-50 opacity-0 transition-all duration-100 bg-[#00fff7]"></div>
+      </div>
+
+      <div class="mt-5">
+        <p class="font-semibold text-lg transition-all duration-100 hover:text-[#00fff7] cursor-pointer text-white">Equilibrium #3429</p>
+        <p class="my-2 font-light">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+        <div class="flex justify-between flex-wrap">
+          <div class="flex gap-[0.35rem]">
+            <img src="../images/icon-ethereum.svg" class="w-[0.6rem] h-4 my-auto">
+            <p class="font-normal text-[#00fff7]">0.041 ETH</p>
+          </div>
+          <div class="flex gap-[0.35rem] content-center">
+            <img src="../images/icon-clock.svg" class="w-4 h-4 my-auto">
+            <p>3 days left</p>
+          </div>
+        </div>
+      </div>
+      <hr class="my-3 border-[#2f415b]">
+      <div class="flex">
+        <img src="../images/image-avatar.png" alt="" class="w-7 h-7 border rounded-full border-white-200 mr-3">
+        <p class="my-auto">
+          Creation of 
+          <span class="font-light hover:text-[#00fff7] transition-all duration-100 cursor-pointer text-white">
+            Jules Wyvern
+          </span>
+        </p>
+      </div>
+    </div> 
+  </div>
+</body>
+</html>

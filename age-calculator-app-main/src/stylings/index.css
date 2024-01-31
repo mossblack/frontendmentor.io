@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h2 {
+        @apply text-xs text-[#717171];
+    }
+    span {
+        @apply text-[#864dff];
+    }
+}
+
+@layer components {
+    .calc-input {
+        @apply p-2 rounded-md border border-gray-500;
+    }
+}

@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .chat {
+        @apply max-w-[60%] text-[7px] p-1.5
+    }
+    .chat-left {
+        @apply chat rounded-lg rounded-bl-sm text-[#9241c8] bg-[#ede5f4];
+    }
+    .chat-left-rent {
+        @apply w-3/4 flex pl-2 py-1.5 pr-5 justify-between rounded-lg rounded-bl-sm bg-gradient-to-l shadow-md text-white from-[#8838ff] to-[#e942ff];
+    }
+    .chat-right {
+        @apply chat self-end rounded-lg rounded-br-sm shadow-md text-[#6e5d7e] bg-white;
+    }
+    .chat-image {
+        @apply w-10 h-10 rounded-lg bg-cover shadow-md;
+    }
+}

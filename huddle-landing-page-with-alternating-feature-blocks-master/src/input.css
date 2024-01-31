@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1 {
+        @apply font-poppins text-xl md:text-2xl;
+    }
+    h2{
+        @apply mb-4 mt-10 md:m-0 text-lg font-poppins font-bold;
+    }
+    h5 {
+        @apply text-sm text-white;
+    }
+    p {
+        @apply text-[#808d99];
+    }
+    a {
+        @apply text-sm;
+    }
+}
+
+@layer components {
+    .main-card {
+        @apply flex flex-col md:flex-row-reverse md:gap-32 md:items-center p-8 rounded-xl  bg-white;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.10);
+    }
+    .pink-button {
+        @apply px-12 py-2.5 rounded-full text-xs font-bold shadow-sm hover:brightness-150 shadow-pink-300 text-white bg-[#ff52bf];
+    }
+    .white-svg {
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(82deg) brightness(106%) contrast(102%);
+    }
+    .white-svg:hover {
+        filter: invert(44%) sepia(79%) saturate(1302%) hue-rotate(295deg) brightness(102%) contrast(102%);
+    }
+    .border-icon {
+        @apply p-0.5 border border-black rounded-full;
+    }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Todo app</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="flex flex-col min-h-screen items-center px-6 bg-[#fafafa] bg-[url('../images/bg-mobile-light.jpg')] bg-repeat-x">
+  <header class="py-10 max-w-lg w-full">
+    <section class="flex justify-between items-center text-3xl md:text-4xl tracking-widest text-white">
+      <h1>TODO</h1>
+      <input type="button" class="bg-[url('../images/icon-moon.svg')] bg-no-repeat bg-cover w-5 h-5 hover:cursor-pointer">
+    </section>
+  </header>
+
+  <main class="flex flex-col grow gap-4 max-w-lg w-full">
+    <section>
+      <div class="tab rounded-md shadow-none">
+        <div class="w-5 h-5 border rounded-full"></div>
+        <input id="textInput" type="text" name="text" maxlength="30" placeholder="Create a new todo..." class="w-3/4 text-[#9394a5]">
+      </div>
+    </section>
+
+    <section id="todos" class="flex flex-col gap-0.5">
+      <!-- <div class="tab">
+        <input type="checkbox" name="checkbox" class="checkbox">
+        <h2 class="w-full">Belajar programming dan yang lain</h2>
+        <input type="button" class="cross">
+      </div> -->
+      <div class="tab justify-between text-[#c3c3c8]">
+        <h3 id="itemsNumber">0 item left</h3>
+        <!-- <div class="flex gap-3 justify-center font-bold text-[#9394a5]">
+          <input type="button" value="All" class="triple-buttons">
+          <input type="button" value="Active" class="triple-buttons">
+          <input type="button" value="Completed" class="triple-buttons">
+        </div> -->
+        <input type="button" value="Clear Completed" class="hover:cursor-pointer hover:text-[#9394a5]">
+      </div>
+    </section>
+
+    <section>
+      <div class="tab justify-center font-bold text-[#9394a5]">
+        <input type="button" value="All" class="triple-buttons">
+        <input type="button" value="Active" class="triple-buttons">
+        <input type="button" value="Completed" class="triple-buttons">
+      </div>
+      <h4 class="mt-10 text-center md:text-sm text-[#b4b3bb]">Drag and drop to reorder list</h4>
+    </section>
+  </main>
+
+  <script src="script/script.js"></script>
+</body>
+</html>

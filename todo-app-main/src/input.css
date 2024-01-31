@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .tab {
+        @apply flex items-center p-4 gap-3 text-sm shadow-lg text-[#484b6a] bg-white;
+    }
+    .triple-buttons {
+        @apply hover:cursor-pointer hover:text-[#484b6a];
+    }
+    .checkbox {
+        @apply appearance-none flex-none w-5 h-5 border rounded-full hover:cursor-pointer checked:bg-gradient-to-br from-[#57ddff] to-[#c058f3];
+    }
+    .cross {
+        @apply bg-[url('../images/icon-cross.svg')] bg-cover bg-no-repeat w-4 h-4 bg-center flex-none hover:cursor-pointer;
+    }
+}

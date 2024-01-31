@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Huddle landing page with single introductory section</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <style>
+    body {
+      background-image: url('./bg-mobile.svg');
+    }
+
+    @media screen and (min-width: 768px) {
+      body {
+        background-image: url('./images/bg-desktop.svg');
+      }
+    }
+  </style>
+</head>
+<body class="flex flex-col min-h-screen  p-9 gap-10 bg-no-repeat bg-fixed bg-cover md:flex-row md:p-11 text-white bg-[#674baf]">
+
+  <div class="flex flex-col gap-12 md:w-full md:justify-center">
+    <img src="./images/logo.svg" class="h-7 self-start md:h-10">
+    <img src="./images/illustration-mockups.svg" class="pb-10">
+  </div>
+  
+  <div class="flex flex-col gap-12 justify-between grow  md:w-2/3 md:gap-0">
+    <div class="flex flex-col gap-4 text-center md:text-left md:justify-center md:gap-6 md:h-full">
+      <h1 class="font-poppins font-semibold text-xl md:text-4xl md:leading-relaxed">Build The Community Your Fans Will Love</h1>
+      <p class="text-base text-white/90">
+        Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
+        Create connections with your users as you engage in genuine discussion.
+      </p>
+      <button class="self-center text-xs py-2 px-14 drop-shadow-lg rounded-full transition-all duration-75 md:self-start md:py-3 md:text-base hover:bg-[#e882e8] hover:text-white bg-white text-[#674baf]">Register</button>
+    </div>
+    <ul class="flex justify-center gap-2 md:justify-end md:items-end">
+        <li>
+          <ion-icon name="logo-facebook" class="text-3xl rounded-full md:text-4xl hover:bg-[#e882e8]"></ion-icon>
+        </li>
+        <li>
+          <ion-icon name="logo-twitter" class="icon"></ion-icon>
+        </li>
+        <li>
+          <ion-icon name="logo-instagram" class="icon"></ion-icon>
+        </li>
+    </ul>
+  </div>
+
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

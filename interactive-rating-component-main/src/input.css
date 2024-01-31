@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1 {
+        @apply text-xl font-bold mb-3;
+    }
+    p {
+        @apply text-sm md:text-xs text-[#959eac];
+    }
+    h2 {
+        @apply text-sm text-[#d67d3e]
+    }
+}
+
+@layer components {
+    .container {
+        @apply max-w-xs w-full flex flex-col p-6 gap-5 rounded-xl bg-[#171e28];
+    }
+    .circle {
+        @apply flex justify-center items-center w-9 h-9 rounded-full bg-[#262e38];
+    }
+    .circle-button {
+        @apply circle text-[#959eac] text-xs hover:cursor-pointer hover:text-white hover:bg-[#f27720] focus:bg-[#959eac] focus:text-white
+    }
+}

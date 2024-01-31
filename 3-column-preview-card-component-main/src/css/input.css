@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .card-list {
+        @apply flex flex-col h-1/3 w-full md:h-full md:w-1/3 justify-between p-8;
+    }
+    .button-card {
+        @apply w-28 h-9 mt-5 md:mt-14 rounded-full text-xs border-2 transition-all duration-75 border-white bg-[#f2f2f2] hover:text-[#f2f2f2];
+    }
+}

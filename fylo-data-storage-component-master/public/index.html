@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Fylo data storage component</title>
+  <style>
+    .background {
+      background-image: url('./img/bg-mobile.png');
+    }
+
+    @media screen and (min-width: 768px) {
+      .background {
+        background-image: url('./img/bg-desktop.png');
+        background-size: 100% 50%;
+        background-position: bottom;
+        background-repeat: no-repeat;
+      }
+    }
+  </style>
+</head>
+<body class="bg-[#0c122c]">
+  
+  <div class="flex flex-col justify-center items-center px-[5%] min-h-screen gap-4 bg-cover bg-fixed md:flex-row background text-[#dddbff]">
+    <div class="flex flex-col justify-center w-full max-w-xs h-44 px-7 gap-7 rounded-xl rounded-tr-[5rem] shadow-lg bg-[#1d2c67]">
+      <img src="./img/logo.svg" class="h-10 w-32">
+      <ul class="flex items-center gap-4">
+        <li class="card-icon">
+          <img src="./img/icon-document.svg" alt="document">
+        </li>
+        <li class="card-icon">
+          <img src="./img/icon-folder.svg" alt="folder">
+        </li>
+        <li class="card-icon">
+          <img src="./img/icon-upload.svg" alt="upload">
+        </li>
+      </ul>
+    </div>
+
+    <div class="flex flex-col w-full max-w-xs h-44 relative text-xs md:max-w-lg md:place-content-end">
+      <div class="flex flex-col h-36 px-7 pt-7 gap-3 rounded-xl shadow-lg md:justify-center md:pt-0 bg-[#1d2c67]">
+        <p>You’ve used <span class="font-bold">815 GB</span> of your storage</p>
+        <div class="w-full h-4 p-0.5 rounded-full bg-[#171f42]">
+          <div class="flex justify-end w-3/4 h-full p-0.5 rounded-full bg-gradient-to-r from-[#ffa399] to-[#ff4d97]">
+            <div class="w-2 h-full rounded-full bg-white"></div>
+          </div>
+        </div>
+        <div class="flex justify-between font-bold">
+          <h5>0 GB</h5>
+          <h5>1000 GB</h5>
+        </div>
+      </div>
+      <div class="flex justify-center items-center w-40 h-14 gap-2 rounded-lg absolute bottom-[18%] right-1/2 translate-x-1/2 translate-y-1/2 md:bottom-[85%] md:right-[21%] md:rounded-br-none text-[#0c122c] bg-white">
+        <h1 class="font-bold text-4xl">185 </h1>
+        <h5 class="text-xs font-normal">GB LEFT</h5>
+        <div class="invisible triangle md:visible"></div>
+      </div>
+      
+    </div>
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Frontend Mentor | Product preview card component</title>
+  </head>
+  <body>
+    <div
+      class="flex flex-col px-4 justify-center h-screen md:flex-row md:px-[25%] md:py-[10%] bg-Cream"
+    >
+      <img
+        src="../images/image-product-mobile.jpg"
+        class="rounded-t-xl md:h-0 md:w-0"
+      />
+      <img
+        src="../images/image-product-desktop.jpg"
+        class="rounded-l-xl h-0 w-0 md:h-auto md:w-auto"
+      />
+      <div
+        class="flex flex-col p-7 rounded-b-xl md:w-auto md:rounded-none md:rounded-r-xl bg-white"
+      >
+        <h1 class="tracking-widest">PERFUME</h1>
+        <p class="font-fraunces font-bold text-3xl py-3 text-Very-dark-blue">
+          Gabriella Essence Eau De Parfum
+        </p>
+        <p class="text-xs">
+          A floral, solar and voluptuous interpretation composed by Oliver
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="flex">
+          <p class="font-fraunces font-bold pt-4 pb-3 text-3xl text-Dark-cyan">$149.99</p>
+          <p class="my-auto ml-3 line-through">$169.99</p>
+        </div>
+        <button class="flex w-full justify-center gap-2 py-3 rounded-lg text-white bg-Dark-cyan hover:bg-[#214538]">
+          <img src="../images/icon-cart.svg" class="my-auto"/>
+          <h1>Add to Cart</h1>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

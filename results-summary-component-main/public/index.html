@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
+  <body>
+    <div class="flex flex-col lg:flex-row">
+      <div
+        class="px-10 py-5 text-center rounded-b-3xl bg-gradient-to-b lg:w-1/2 lg:rounded-none lg:rounded-r-3xl lg:flex lg:flex-col lg:justify-around lg:h-[100vh] lg:py-10 from-Light-slate-blue to-Light-royal-blue"
+      >
+        <h1 class="pb-5 lg:text-2xl tracking-wider text-Light-lavender">Your Result</h1>
+        <div
+          class="w-[calc(100vw/3)] h-[calc(100vw/3)] rounded-full mx-auto flex bg-gradient-to-t lg:w-[calc(100vw/4)] lg:h-[calc(100vw/4)] from-Violet-blue/100 to-Persian-blue"
+        >
+          <div class="m-auto leading-none">
+            <h1 class="text-[calc(100vw/8)] lg:text-[calc(100vw/11)] text-white font-bold">76</h1>
+            <h1 class="text-[calc(100vw/25)] lg:text-[calc(100vw/50)] text-Light-lavender/50">of 100</h1>
+          </div>
+        </div>
+        <div class="pt-5 pb-3">
+          <h1 class="text-xl mb-1 lg:text-4xl lg:mb-4 text-white">Great</h1>
+          <p class="text-sm lg:text-lg tracking-wider text-Light-lavender">
+            You scored higher than 65% of the people who taken these tests.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex flex-col justify-evenly lg:grow p-5 lg:h-[100vh] lg:p-12">
+        <p class="mb-5 lg:text-3xl lg:font-bold text-slate-950">Summary</p>
+        <div class="grid grid-cols-1 gap-4 lg:gap-5">
+          <div class="grid-card bg-Light-red/5">
+            <div class="flex text-Light-red">
+              <img src="../assets/images/icon-reaction.svg" class="mr-2" />
+              <p>Reaction</p>
+            </div>
+            <div class="flex text-slate-500">
+              <p><span class="point-bold">80</span> / 100</p>
+            </div>
+          </div>
+
+          <div class="grid-card bg-Orangey-yellow/5">
+            <div class="flex text-Orangey-yellow">
+              <img src="../assets/images/icon-memory.svg" class="mr-2" />
+              <p>Memory</p>
+            </div>
+            <div class="flex text-slate-500">
+              <p><span class="point-bold">92</span> / 100</p>
+            </div>
+          </div>
+
+          <div class="grid-card bg-Green-teal/5">
+            <div class="flex text-Green-teal">
+              <img src="../assets/images/icon-verbal.svg" class="mr-2" />
+              <p>Verbal</p>
+            </div>
+            <div class="flex text-slate-500">
+              <p><span class="point-bold">61</span> / 100</p>
+            </div>
+          </div>
+
+          <div class="grid-card bg-Cobalt-blue/5">
+            <div class="flex text-Cobalt-blue">
+              <img src="../assets/images/icon-visual.svg" class="mr-2" />
+              <p>Visual</p>
+            </div>
+            <div class="flex text-slate-500">
+              <p><span class="point-bold">72</span> / 100</p>
+            </div>
+          </div>
+        </div>
+
+        <button
+          type="button"
+          class="text-center w-full p-3 rounded-full mt-5 lg:p-4 lg:text-xl text-white bg-Dark-gray-blue hover:bg-gradient-to-b tracking-widest from-Violet-blue/100 to-Persian-blue"
+        >
+          Continue
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

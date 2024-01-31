@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .icon {
+    @apply text-sm border text-[#674baf] bg-white rounded-full p-1.5 md:text-xl hover:border-[#e882e8] hover:text-[#e882e8];
+  }
+}

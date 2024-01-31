@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Clipboard landing page</title>
+  </head>
+  <body
+    class="flex flex-col min-h-screen content-center bg-[url('./images/bg-header-mobile.png')] md:bg-[url('./images/bg-header-desktop.png')] bg-no-repeat bg-contain text-center subpixel-antialiased text-[#9fabb2]"
+  >
+    <header class="mx-auto pt-28 pb-20">
+      <img src="./images/logo.svg" alt="" width="120px" />
+    </header>
+
+    <main class="flex flex-col max-w-md mx-auto px-7 pb-44 gap-44 md:max-w-5xl">
+      <section class="md:max-w-2xl md:mx-auto">
+        <div>
+          <h1 class="md:text-4xl">A history of everything you copy</h1>
+          <p>
+            Clipboard allows you to track and organize everything you copy.
+            Instantly access your clipboard on all your devices.
+          </p>
+        </div>
+        <div class="flex flex-col gap-4 md:flex-row md:justify-center">
+          <button class="button-download shadow-button-cyan">
+            Download for iOS
+          </button>
+          <button class="button-download shadow-button-blue">
+            Download for Mac
+          </button>
+        </div>
+      </section>
+
+      <section class="md:gap-36 md:grid md:grid-cols-2 md:relative">
+        <div class="md:max-w-2xl mx-auto md:col-span-2">
+          <h1 class="md:text-3xl">Keep track of your snippets</h1>
+          <p>
+            Clipboard instantly stores any item you copy in the cloud, meaning
+            you can access your snippets immediately on all your devices. Our
+            Mac and iOS apps will help you organize everything.
+          </p>
+        </div>
+        <img
+          src="./images/image-computer.png"
+          alt="computer"
+          class="my-10 md:my-0 md:max-w-2xl md:absolute md:-bottom-20 md:-left-48"
+        />
+        <div
+          class="flex flex-col gap-10 md:max-w-4xl md:self-end md:text-left md:col-start-2"
+        >
+          <div>
+            <h1>Quick Search</h1>
+            <p>
+              Easily search your snippets by content, category, web address,
+              application, and more.
+            </p>
+          </div>
+          <div>
+            <h1>iCloud Sync</h1>
+            <p>Instantly saves and syncs snippets across all your devices.</p>
+          </div>
+          <div>
+            <h1>Complete History</h1>
+            <p>
+              Retrieve any snippets from the first moment you started using the
+              app.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="md:max-w-2xl md:mx-auto">
+          <h1>Access Clipboard anywhere</h1>
+          <p>
+            Whether you’re on the go, or at your computer, you can access all
+            your Clipboard snippets in a few simple clicks.
+          </p>
+        </div>
+        <img
+          src="./images/image-devices.png"
+          alt="devices"
+          class="md:max-w-4xl md:mx-auto"
+        />
+      </section>
+
+      <section class="md:grid md:grid-cols-3">
+        <div class="md:col-span-3">
+          <h1 class="md:text-3xl">Supercharge your workflow</h1>
+          <p>We’ve got the tools to boost your productivity.</p>
+        </div>
+        <div>
+          <img
+            src="./images/icon-blacklist.svg"
+            alt="blacklist"
+            class="icon-image"
+          />
+          <h1>Create blacklists</h1>
+          <p class="md:text-sm">
+            Ensure sensitive information never makes its way to your clipboard
+            by excluding certain sources.
+          </p>
+        </div>
+        <div>
+          <img src="./images/icon-text.svg" alt="text" class="icon-image" />
+          <h2>Plain text snippets</h2>
+          <p class="md:text-sm">
+            Remove unwanted formatting from copied text for a consistent look.
+          </p>
+        </div>
+        <div>
+          <img
+            src="./images/icon-preview.svg"
+            alt="preview"
+            class="icon-image"
+          />
+          <h2>Sneak preview</h2>
+          <p class="md:text-sm">
+            Quick preview of all snippets on your Clipboard for easy access.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <ul class="flex flex-col items-center gap-14 md:flex-row">
+          <li>
+            <img src="./images/logo-google.png" alt="google" />
+          </li>
+          <li>
+            <img src="./images/logo-ibm.png" alt="ibm" />
+          </li>
+          <li>
+            <img src="./images/logo-microsoft.png" alt="microsoft" />
+          </li>
+          <li>
+            <img src="./images/logo-hp.png" alt="hp" />
+          </li>
+          <li>
+            <img src="./images/logo-vector-graphics.png" alt="vector" />
+          </li>
+        </ul>
+      </section>
+
+      <section class="md:max-w-2xl md:mx-auto">
+        <div>
+          <h1>Clipboard for iOS and Mac OS</h1>
+          <p class="md:text-sm">
+            Available for free on the App Store. Download for Mac or iOS, sync
+            with iCloud and you’re ready to start adding to your clipboard.
+          </p>
+        </div>
+        <div class="flex flex-col gap-4 md:flex-row md:mx-auto">
+          <button class="button-download shadow-button-cyan">
+            Download for iOS
+          </button>
+          <button class="button-download shadow-button-blue">
+            Download for Mac
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="text-[#4c545d] bg-[#f5f6f8]">
+      <div
+        class="flex flex-col items-center py-10 gap-9 md:flex-row md:justify-between md:max-w-5xl md:w-full md:px-10 md:mx-auto"
+      >
+        <img src="./images/logo.svg" alt="logo" width="40px" />
+
+        <ul class="flex flex-col gap-3 md:grid md:grid-cols-3">
+          <li>
+            <a href="" class="hover:text-[#26baa4]">FAQs</a>
+          </li>
+          <li>
+            <a href="" class="hover:text-[#26baa4]">Contact Us</a>
+          </li>
+          <li>
+            <a href="" class="hover:text-[#26baa4]">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="" class="hover:text-[#26baa4]">Press Kit</a>
+          </li>
+          <li>
+            <a href="" class="hover:text-[#26baa4]">Install Guide</a>
+          </li>
+        </ul>
+
+        <ul class="flex items-center gap-6">
+          <li>
+            <a href="">
+              <img
+                src="./images/icon-facebook.svg"
+                alt="facebook"
+                width="20px"
+                class="hover:filter-cyan"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img
+                src="./images/icon-twitter.svg"
+                alt="twitter"
+                width="20px"
+                class="hover:filter-cyan"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img
+                src="./images/icon-instagram.svg"
+                alt="instagram"
+                width="20px"
+                class="hover:filter-cyan"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

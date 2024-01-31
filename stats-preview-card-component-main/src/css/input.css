@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .card-list {
+        @apply flex flex-col text-[0.6rem] tracking-widest landscape:text-[0.5rem] font-lexend text-white/60;
+    }
+    .white-bold {
+        @apply font-sans font-bold text-lg landscape:text-lg text-white tracking-wider
+    }
+}

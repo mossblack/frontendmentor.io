@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="min-h-screen flex justify-center items-center px-5 text-white bg-[#141519]">
+  <section class="container">
+    <div class="circle">
+      <img src="./images/icon-star.svg" alt="star icon" class="w-3.5 h-3">
+    </div>
+    <div>
+      <h1>
+        How did we do?
+      </h1>
+      <p>
+        Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
+      </p>
+    </div>
+    <div id="ratingButtons" class="flex justify-center gap-4">
+      <input type="button" value="1" class="circle-button">
+      <input type="button" value="2" class="circle-button">
+      <input type="button" value="3" class="circle-button">
+      <input type="button" value="4" class="circle-button">
+      <input type="button" value="5" class="circle-button">
+    </div>
+    <input id="submit" type="submit" value="SUBMIT" class="py-2.5 rounded-full text-sm tracking-widest hover:cursor-pointer hover:bg-white hover:text-[#f27720] bg-[#f27720]">
+  </section>
+
+  <!-- <section class="container py-9 items-center text-center">
+    <img src="./images/illustration-thank-you.svg" alt="thank you" width="150">
+    <div class="py-1.5 px-2.5 rounded-full bg-[#262e38]">
+      <h2>You selected 4 out of 5</h2>
+    </div>
+    <div>
+      <h1>Thank You!</h1>
+      <p>
+        We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!
+      </p>
+    </div>
+  </section> -->
+
+<script src="script/script.js"></script>
+</body>
+</html>
